@@ -89,7 +89,6 @@ span {
 
 #vitrine {
     color: #777;
-    padding: 0.3em;
     overflow-wrap: break-word;
     text-align: center;
 }
@@ -195,11 +194,36 @@ span {
     #calc {
         width: 370px;
     }
+
+
+    #vitrine h1 {
+        font-size: 1.6em;
+    }
+
+    #container {
+        padding-top: 5px;
+    }
 }
 
-@media (max-width: 360px) {
 
+@media (max-width: 390px) {
+    #calc h3 {
+        font-size: 0.74em;
+    }
+}
+
+
+@media (max-width: 375px) {
     #calc {
         width: 358px;
+    }
+
+    #buttons-container input {
+        height: 3.5em;
+        font-size: 1.1em;
+    }
+
+    #resposta{
+        font-size: 1.4em;
     }
 }

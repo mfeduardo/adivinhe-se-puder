@@ -176,5 +176,7 @@ function verifica_recorde(pontuacao) {
         recorde = pontuacao
         localStorage.setItem('recorde', recorde)
         resposta.innerHTML = `Novo Recorde! ${recorde} pontos!!!`
+    } else {
+        resposta.innerHTML = `Pontos: ${pontuacao}`
     }
 }
