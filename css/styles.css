@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    background-repeat: repeat;
+    padding-top: 15px;
+    background: linear-gradient(180deg, #0697ff38 0%, #fcfafa 100%);
+}
+
+span {
+    color: #FF5722;
+    font-size: 1.3em;
+}
+
+.backspace {
+    color: #b31240;
+    background-color: #f7e6ff;
+}
+
+.check {
+    color: #557d00;
+    background-color: #ebffbf;
+}
+
+.continuar {
+    color: #557d00;
+    background-color: #ebffbf;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+.large {
+    font-size: x-large;
+}
+
+#calc {
+    border-radius: 5px;
+    width: 400px;
+    padding: 0.5em;
+    background-color: #fff;
+    opacity: 0.95;
+    color: #000;
+    display: flex;
+    /* para itens internos */
+    flex-direction: column;
+    /* um item embaixo do outro*/
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 188px 52px rgba(0, 0, 0, 0.01),
+        0px 120px 48px rgba(0, 0, 0, 0.04),
+        0px 68px 41px rgba(0, 0, 0, 0.15),
+        0px 30px 30px rgba(0, 0, 0, 0.26),
+        0px 8px 17px rgba(0, 0, 0, 0.29),
+        inset 0px 6px 8px rgba(255, 255, 255, 0.1),
+        inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+
+    border-radius: 8px;
+}
+
+#calc h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: #1976D2;
+    margin-bottom: 17px;
+}
+
+
+#operacoes_molde {
+    min-height: 18em;
+}
+
+#operacoes {
+    text-align: center;
+}
+
+#vitrine {
+    color: #777;
+    padding: 0.3em;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+#vitrine h1 {
+    letter-spacing: 0.12em;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FF5722;
+}
+
+.center {
+    text-align: center;
+}
+
+#vitrine h2 {
+    margin-top: 2px;
+    font-size: small;
+    color: #000;
+    padding: 0;
+}
+
+#placar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #757575;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#rodape {
+    color: #4CAF50;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 2.2em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#entrada {
+    font-size: 3.8em;
+    min-height: 1.6em;
+    color: #FF9800;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#entrada p {
+    font-size: 15px;
+    color: #FFC107;
+}
+
+.span {
+    font-size: 20px;
+    color: #4CAF50;
+}
+
+#frase_resposta {
+    font-size: 1.6em;
+    min-height: 1.6em;
+    color: #FFC107;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#buttons-container input {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+#buttons-container .number {
+    background-color: #f3f3f3;
+}
+
+#buttons-container input:hover {
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#buttons-container #equal-btn {
+    grid-column: span 1;
+    background-color: #75a5cb;
+}
+
+@media (max-width: 400px) {
+
+    #calc {
+        width: 370px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    #calc {
+        width: 358px;
+    }
+}

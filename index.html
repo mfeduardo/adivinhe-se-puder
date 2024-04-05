@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="branco">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe se puder!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="calc">
+            <div id="vitrine">
+                <h1>ADIVINHE SE PUDER!</h1>
+            </div>
+            <h3 id="frase" class="center"></h3>
+            <div id="operacoes_molde">
+                <div id="operacoes">
+                    <div id="entrada"></div>
+                </div>
+                <div id="frase_resposta"></div>
+                <div id="rodape">
+                    <h2 id="resposta"></h2>
+                </div>
+            </div>
+            <div id="placar">
+                <div id="rodada"></div>
+                <div id="pontos"></div>
+                <div id="recorde"></div>
+            </div>
+            <div id="buttons-container">
+                <input type="button" value="7" class="number" onclick="imprimir(7)" />
+                <input type="button" value="8" class="number" onclick="imprimir(8)" />
+                <input type="button" value="9" class="number" onclick="imprimir(9)" />
+                <input type="button" value="4" class="number" onclick="imprimir(4)" />
+                <input type="button" value="5" class="number" onclick="imprimir(5)" />
+                <input type="button" value="6" class="number" onclick="imprimir(6)" />
+                <input type="button" value="1" class="number" onclick="imprimir(1)" />
+                <input type="button" value="2" class="number" onclick="imprimir(2)" />
+                <input type="button" value="3" class="number" onclick="imprimir(3)" />
+                <button onclick="apagar()" class="backspace"><ion-icon name="backspace"
+                        class="large"></ion-icon><br>Apagar</button>
+                <input type="button" value="0" class="number" onclick="imprimir(0)" />
+                <button onclick="verificar()" class="check"><ion-icon name="send"
+                        class="large"></ion-icon><br>Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
